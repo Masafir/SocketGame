@@ -4,9 +4,6 @@ const io = require('socket.io').listen(server);
 const ent = require('ent'); // Permet de bloquer les caractères HTML (sécurité équivalente à htmlentities en PHP)
 
 // Chargement de la page index.html
-/* app.get('/', function (req, res) {
-  res.sendfile(__dirname + '/index.html');
-}); */
 
 io.sockets.on('connection', function (socket, pseudo) {
     console.log("Connected !");
@@ -27,4 +24,4 @@ io.sockets.on('connection', function (socket, pseudo) {
     }); 
 });
 
-server.listen(3000);
+server.listen(8080);

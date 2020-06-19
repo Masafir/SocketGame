@@ -22,12 +22,12 @@ const Input = styled.input`
   padding: 5px;
 `;
 const Button = styled.button`
-  width: 120px;
-  padding: 5px;
+  width: 140px;
+  padding: 8px;
   border: none;
   background-color: black;
   color: white;
-  margin: 5px 0;
+  margin: 0px 5px;
   transition: letter-spacing 0.5s;
   &:hover{
     letter-spacing: 2px;
@@ -44,6 +44,10 @@ const Container = styled.div`
 const Form = styled.form`
   width: 100%;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 `;
 const View = styled.div`
   height: 90vh;
